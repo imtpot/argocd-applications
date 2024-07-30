@@ -7,4 +7,4 @@ source:
 
 values:
   replicaCount: 3
-  token: <path:secret/data/test_token#token>
+  token: "<path:secret/data/test_token#token>"
