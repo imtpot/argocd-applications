@@ -9,3 +9,4 @@ values_files: values.yaml
 
 addons:
   path: extra
+  vault: true
