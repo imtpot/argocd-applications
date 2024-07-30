@@ -5,6 +5,9 @@ source:
   targetRevision: 6.6.3
   chart: podinfo
 
+values:
+  replicaCount: 3
+
 values_files:
   - values.yaml
   - values-prod.yaml
