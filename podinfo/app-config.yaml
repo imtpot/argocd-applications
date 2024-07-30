@@ -6,3 +6,4 @@ source:
   chart: podinfo
 
 values_file: values.yaml
+vault: true
