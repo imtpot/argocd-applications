@@ -1,1 +1,3 @@
 logLevel: debug
+image:
+  tag: 6.7.0
