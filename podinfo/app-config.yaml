@@ -5,5 +5,5 @@ source:
   targetRevision: 6.6.3
   chart: podinfo
 
-values:
-  logLevel: <path:secret/data/podinfo#loglevel>
+values_files:
+  - values.yaml
