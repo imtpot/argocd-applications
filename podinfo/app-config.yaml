@@ -5,7 +5,8 @@ source:
   targetRevision: 6.6.3
   chart: podinfo
 
-values_files: values.yaml
+values_files:
+  - values.yaml
 
 addons:
   path: extra
