@@ -1,6 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
+  annotations:
+    avp.kubernetes.io/path: "secret/data/test_token"
   labels:
     app.kubernetes.io/name: test
   name: test
@@ -14,7 +16,7 @@ spec:
     chart: podinfo
     helm:
       valuesObject:
-        logLevel: <path:secret/data/test_token#token>
+        logLevel: <token>
     repoURL: https://stefanprodan.github.io/podinfo
     targetRevision: 6.6.3
   syncPolicy:
