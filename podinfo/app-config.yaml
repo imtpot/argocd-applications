@@ -8,5 +8,4 @@ source:
 values_files: values.yaml
 
 addons:
-  enable: true
-  vault: true
+  path: extra
