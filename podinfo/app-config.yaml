@@ -6,4 +6,4 @@ source:
   chart: podinfo
 
 values:
-  logLevel: <path:secret/data/test_token#token>
+  logLevel: <path:secret/data/podinfo#loglevel>
