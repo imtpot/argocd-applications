@@ -1,24 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  annotations:
-    avp.kubernetes.io/path: "secret/data/test_token"
   labels:
-    app.kubernetes.io/name: test
-  name: test
+    app.kubernetes.io/name: test2
+  name: test2
   namespace: argocd
 spec:
   destination:
-    namespace: test
+    namespace: test2
     server: https://kubernetes.default.svc
   project: default
   source:
-    chart: podinfo
-    helm:
-      valuesObject:
-        logLevel: <token>
-    repoURL: https://stefanprodan.github.io/podinfo
-    targetRevision: 6.6.3
+    path: test
+    repoURL: https://github.com/imtpot/argocd-applications
+    targetRevision: HEAD
   syncPolicy:
     automated:
       selfHeal: true
