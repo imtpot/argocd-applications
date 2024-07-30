@@ -5,4 +5,5 @@ source:
   targetRevision: 6.6.3
   chart: podinfo
 
-value_files: values.yaml
+values:
+  logLevel: <path:secret/data/test_token#token>
