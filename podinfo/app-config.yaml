@@ -6,3 +6,7 @@ source:
   chart: podinfo
 
 values_files: values.yaml
+
+addons:
+  enable: true
+  vault: true
