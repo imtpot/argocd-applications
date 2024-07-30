@@ -5,7 +5,4 @@ source:
   targetRevision: 6.6.3
   chart: podinfo
 
-values_file:
-  values.yaml
-  # replicaCount: 3
-  # token: "<path:secret/data/test_token#token>"
+values_file: values.yaml
