@@ -6,4 +6,4 @@ source:
   chart: podinfo
 
 values:
-  replicaCount: 2
+  replicaCount: 3
