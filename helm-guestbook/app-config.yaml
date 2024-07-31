@@ -7,4 +7,3 @@ source:
 
 addons:
   path: extra
-  vault: true
